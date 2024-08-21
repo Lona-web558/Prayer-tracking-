@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prayer Tracker</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container my-5">
+    <h1 class="text-center mb-4">Prayer Tracker</h1>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Add Prayer</h2>
+        <form id="prayer-form">
+          <div class="form-group">
+            <label for="prayer-date">Date</label>
+            <input type="date" class="form-control" id="prayer-date" required>
+          </div>
+          <div class="form-group">
+            <label for="prayer-topic">Prayer Topic</label>
+            <input type="text" class="form-control" id="prayer-topic" required>
+          </div>
+          <div class="form-group">
+            <label for="prayer-notes">Notes</label>
+            <textarea class="form-control" id="prayer-notes" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Add Prayer</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h2>Prayer List</h2>
+        <div class="form-group">
+          <label for="filter-status">Filter by Status</label>
+          <select class="form-control" id="filter-status">
+            <option value="">All</option>
+            <option value="Praying">Praying</option>
+            <option value="Answered">Answered</option>
+            <option value="Unanswered">Unanswered</option>
+          </select>
+        </div>
+        <div id="prayer-list"></div>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-md-12">
+        <h2>Prayer Progress</h2>
+        <canvas id="prayer-progress-chart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

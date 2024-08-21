@@ -1,0 +1,35 @@
+/* style.css */
+.prayer-item {
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.prayer-item h3 {
+  font-size: 1.2rem;
+}
+
+.prayer-item p {
+  margin-bottom: 0.5rem;
+}
+
+.prayer-item .badge {
+  font-size: 0.8rem;
+  padding: 0.4rem 0.8rem;
+}
+
+.prayer-item .badge-praying {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.prayer-item .badge-answered {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.prayer-item .badge-unanswered {
+  background-color: #dc3545;
+  color: #fff;
+}
